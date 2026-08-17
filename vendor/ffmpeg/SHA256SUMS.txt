@@ -1,0 +1,9 @@
+Archive SHA-256:
+e25b682664025d49034c981afb4bae36238a40f29a3cc1c713ad9a8b5b3528f6  ffmpeg-8.1.2-essentials_build.7z
+
+Bundled resource SHA-256 values:
+1326dde4c84ff1f96fe6b8916c5bed29e163e9b5dccf995f6f3db069d143ec5e  bin/ffmpeg.exe
+b49ccc7c6547b141ad5a2f6ec69cc04323d7133d7704d70b331b904c63eecb07  bin/ffprobe.exe
+8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903  LICENSE
+9172433fb251059a58d2ff11ba8c6132e04819136ed96e809563911ff0d13816  README.txt
+

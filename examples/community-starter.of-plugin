@@ -1,0 +1,62 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "id": "org.openframe.community-starter",
+    "name": "Community Starter Pack",
+    "version": "1.0.0",
+    "author": "OpenFrame contributors",
+    "description": "A safe declarative example with an effect preset, transition, theme, template, and exporter.",
+    "minimumOpenFrameVersion": "0.8.0",
+    "runtime": "declarative-v1",
+    "permissions": ["project.read"],
+    "capabilities": ["effects", "transitions", "templates", "themes", "exporters"],
+    "license": "MIT",
+    "sourceUrl": "https://github.com/openframe-studio/openframe"
+  },
+  "contributions": {
+    "effects": [
+      { "id": "soft-focus", "name": "Soft Focus", "kind": "blur", "defaultAmount": 0.28, "description": "A restrained blur preset." }
+    ],
+    "transitions": [
+      { "id": "gentle-fade", "name": "Gentle Fade", "kind": "fade", "defaultDurationMs": 500, "description": "A half-second fade." }
+    ],
+    "templates": [
+      {
+        "id": "community-card",
+        "name": "Community Card",
+        "category": "Community",
+        "description": "Minimal editable card",
+        "source": "community",
+        "page": {
+          "id": "community-card-page",
+          "name": "Community Card",
+          "width": 1080,
+          "height": 1080,
+          "backgroundColor": "#101419",
+          "gradientAngle": 45,
+          "objects": []
+        }
+      }
+    ],
+    "themes": [
+      {
+        "id": "deep-ocean",
+        "name": "Deep Ocean",
+        "tokens": {
+          "background": "#071116",
+          "panel": "#0b1820",
+          "surface": "#10222c",
+          "border": "#24404d",
+          "text": "#edf7fa",
+          "muted": "#7f9ba7",
+          "accent": "#67e8c8",
+          "accentSecondary": "#6f8cff"
+        }
+      }
+    ],
+    "aiModels": [],
+    "exporters": [
+      { "id": "compact-web", "name": "Compact Web MP4", "description": "Smaller H.264 delivery preset", "container": "mp4", "videoCodec": "h264", "crf": 24, "audioBitrateKbps": 160 }
+    ]
+  }
+}

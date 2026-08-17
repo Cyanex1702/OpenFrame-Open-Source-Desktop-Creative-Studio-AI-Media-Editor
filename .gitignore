@@ -1,0 +1,71 @@
+# JavaScript dependencies and frontend build output
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# Rust / Tauri build output
+src-tauri/target/
+target/
+
+# Packaged installers and generated release artifacts
+artifacts/
+
+# Logs, diagnostics, QA screenshots, and generated test output
+*.log
+*.stdout.log
+*.stderr.log
+native-test.*.log
+qa-*.png
+qa-*.jpg
+qa-*.jpeg
+coverage/
+test-results/
+playwright-report/
+
+# Local tooling and repository audit output
+.tools/
+github-audit.txt
+github-status.txt
+
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+secrets*.json
+
+# Local databases / runtime state
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Downloaded local AI model payloads (not source)
+*.gguf
+ggml-*.bin
+models/
+
+# Vendor download archives; keep the extracted, licensed runtime files instead
+vendor/*.7z
+vendor/**/*.7z
+
+# OS / editor metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Temporary/editor backup files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~

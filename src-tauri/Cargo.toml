@@ -1,0 +1,28 @@
+[package]
+name = "openframe"
+version = "0.12.0"
+description = "The free, open-source creative studio."
+authors = ["OpenFrame contributors"]
+edition = "2021"
+license = "MIT"
+
+[lib]
+name = "openframe_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = ["protocol-asset"] }
+tauri-plugin-dialog = "2"
+thiserror = "2"
+uuid = { version = "1", features = ["v4"] }
+
+
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls"] }
+sha1 = "0.10"
+
+sha2 = "0.10"
